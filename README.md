@@ -1,5 +1,5 @@
 # guestapp-baseimage
-Base Image for Guest Registration Webapp
+Base Image for Webapp
 
 docker build -t webapp .
 
