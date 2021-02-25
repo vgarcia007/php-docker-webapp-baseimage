@@ -3,7 +3,7 @@
 build: webapp
 
 docker-pull:
-	docker pull php:7.4.3-apache
+	docker pull php:8.0.2-apache
 
 webapp: docker-pull
 	docker build --no-cache -t webapp -f Dockerfile .
