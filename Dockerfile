@@ -16,4 +16,5 @@ RUN docker-php-ext-install zip
 RUN docker-php-ext-configure gd --with-jpeg=/usr/include/ --with-freetype=/usr/include/
 RUN docker-php-ext-install gd
 
-RUN a2enmod rewrite
+RUN a2enmod rewrite && \
+    a2enmod expires
